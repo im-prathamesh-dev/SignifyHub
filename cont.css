@@ -135,7 +135,7 @@ section#hero{
   margin: 0 auto;
   margin-top: 50px;
   border-color: #ffffff;
-  background-image:url("/img/bg.jpg");
+  background-image:url("bg.jpg");
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(30px);
