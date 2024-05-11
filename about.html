@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/getcss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>SignifyHub | About us</title>
+    <style>
+        .form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo" style="font-family:Kaushan Script "><a href="index.html">SignifyHub</a></div>
+            <ui class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ui>
+            <a href="getstarted.html" class="action_btn">Get Strated</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
+        <div class="dropdown_menu ">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="getstarted.html" class="action_btn">Get Strated</a></li>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="header">
+                <h1 style="font-size: 90px;  background-image: url(/img/bg.jpg); background-size: contain; -webkit-background-clip: text;-webkit-text-fill-color: transparent;">About Us</h1>
+            </div>
+            <div class="content" style="font-size: 20px;">
+                <p>Welcome to our website, where we offer music notation for any song for free!<br> Our team of
+                    experienced musicians and musicologists work tirelessly to provide accurate and high-quality<br>
+                    music notation for all genres and styles of music. We believe that music should be accessible to
+                    everyone,<br> and we're proud to offer this service to music lovers everywhere.</p>
+                <p>If you have a song that you'd like to request music notation for, please use the form below. <br>We'll do
+                    our best to fulfill your request as soon as possible.</p>
+                
+            </div>
+            
+            </div>
+            <div class="form">
+                <form style="height: 50vh;background-size: cover;   
+                border-color: #000;
+                backdrop-filter: blur(30px);border-radius: 10px;" action="contact.html" method="get">
+                
+                <button type="submit" >Contact Us</button>
+              </form>
+            </div>
+        </section>
+        
+    </main>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
+</body>
+
+</html>
