@@ -88,6 +88,3 @@ We welcome contributions! To contribute:
 
 For questions or inquiries, please contact us at [prathamesh0755@gmail.com](mailto:prathamesh0755@gmail.com).
 
----
-
-Replace the placeholder text, such as yourusername and path-to-screenshot, with your actual information. This README provides an overview of your website, its features, and instructions for usage and contribution.
